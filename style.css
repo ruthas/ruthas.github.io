@@ -1,0 +1,16 @@
+html {
+  background-image: url('images/passion.jpg');
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  font-size: 18px;
+  background-size: cover;
+  display: flex;
+  background-position: center;
+  justify-content: center;
+  min-height: 100%;
+  flex: 1;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
