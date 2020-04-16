@@ -48,6 +48,7 @@ html {
     inset 0 0 0 3px #EFEFEF,
     inset 0 0 10px black,
     0 0 10px rgba(0,0,0,0.2);
+    display: flex;
 }
 
 .clock-face {
@@ -55,6 +56,7 @@ html {
   width: 100%;
   height: 100%;
   transform: translateY(-3px); /* account for the height of the clock hands */
+  display: flex;
 }
 
 .hand {
