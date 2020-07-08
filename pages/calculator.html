@@ -60,8 +60,6 @@
 		</nav>
 
 		<div class="container-fluid">
-			<!-- Calculate Cover image-->
-
 			<div class="cover-image cover-image-calculator">
 				<div class="row">
 					<div class="col-12 text-center">
@@ -74,77 +72,93 @@
 					</div>
 				</div>
 			</div>
-			<!-- Calculate Heading-->
-			<div class="width-body">
+			
+			<div class="row margin-tp information width-body">
 				<h2 class="yellow">Calculate your benefits</h2>
-				<div class="row margin-tp information">
-					<div class="col-12 col-sm-2">
-						<img
-							src="../assets/Group 2656.svg"
-							class="responsive-image-icon-calculator information"
-						/>
-					</div>
-					<div class="col-12 col-sm-10">
-						<h2 class="black">Your pay</h2>
-						<p class="paragraph-text">
-							How much are you paid? If you’ve more than one job, select the job
-							whose pay you want topped up.
-						</p>
-						<div class="row">
-							<div class="col-12 col-md-4">
-								<input
-									type="text"
-									class="form-control input-contact margin-tp"
-									aria-label="Large"
-									aria-describedby="inputGroup-sizing-sm"
-									placeholder="R 00"
-								/>
-							</div>
-							<div class="col-12 col-md-4 input-container">
-								<input
-									type="text"
-									class="form-control input-contact margin-tp"
-									aria-label="Large"
-									aria-describedby="inputGroup-sizing-sm"
-									placeholder="Per day"
-								/>
-							</div>
+			</div>
+
+
+			<div class="row margin-tp information calculator-padding">
+				<div class="col-12 col-sm-2">
+					<img
+						src="../assets/Group 2656.svg"
+						class="responsive-image-icon-calculator information"
+					/>
+				</div>
+				<div class="col-12 col-sm-10">
+					<h2 class="black">Your pay</h2>
+					<p class="paragraph-text">
+						How much are you paid? If you’ve more than one job, select the job
+						whose pay you want topped up.
+					</p>
+					<div class="row">
+						<div class="col-12 col-sm-4 input-calculator">
+							<input
+								id="Rand"
+								type="text"
+								class="form-control"
+								placeholder="R 0.00"
+							/>
+						</div>
+						<div style="margin-top: 10px;" class="col-12 col-sm-4">
+							<select name="" id="" class="form-control">
+								<option value="Per Day">Per Day</option>
+								<option value="Per Week">Per Week</option>
+								<option value="Per Month">Per Month</option>
+							</select>	
 						</div>
 					</div>
 				</div>
-				<div class="row margin-tp information">
-					<div class="col-12 col-sm-2">
-						<img
-							src="../assets/Group 2657.svg"
-							class="responsive-image-icon-calculator information"
-						/>
-					</div>
-					<div class="col-12 col-sm-10">
-						<h2 class="black">Your unpaid time off over a year</h2>
-						<p class="paragraph-text">
+			</div>
+
+			
+
+			<div class="row margin-tp calculator-padding">
+				<div class="col-12 col-sm-2 information">
+					<img
+						src="../assets/Group 2657.svg"
+						class="responsive-image-icon-calculator information"
+					/>
+				</div>
+				<div class="col-12 col-sm-10 information">
+					<h2 class="black">Your unpaid time off over a year</h2>
+
+					<p class="paragraph-text">
 							How many unpaid days would you take due to sickness, bank
 							holidays, personal holidays, changes to the shift roster, etc?
-						</p>
-						<div class="row">
-							<div class="col-12 col-md-4">
-								<input
-									type="text"
-									class="form-control input-contact margin-tp"
-									aria-label="Large"
-									aria-describedby="inputGroup-sizing-sm"
-									placeholder="20 days"
-								/>
-							</div>
+					</p>
+					<div class="row">
+						<div class="col-8 col-sm-4 input-calculator">
+							<input
+								type="text"
+								name="Days"
+								class="form-control"
+								placeholder="20"
+							/>
+						</div>
+						<div class="col-4 col-sm-4">
+							<label for="Days" class="">Days</label>
 						</div>
 					</div>
 				</div>
+			</div>
+
+		
+
+			<div class="row margin-tp information width-body">
+				<div class="col-12 offset-sm-8 col-sm-4">
+					<button type="submit" class="btn contact-form-btn btn-lg btn-block">Calculate</button>
+				</div>
+			</div>
+
+
+			<!-- Calculate Button 
 				<div class="row space float-right bd-highlight col-12 col-sm-3">
 					<button class="btn contact-form-btn btn-lg btn-block" type="submit">
 						Submit
 					</button>
 				</div>
-			</div>
-			<!-- Calculate Button -->
+			-->
 			<div class="row">
 				<ul class="col-12 list-unstyled text-small footer-styled">
 					<li>

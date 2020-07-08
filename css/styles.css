@@ -219,11 +219,22 @@ body,
 
 .responsive-image-icon-calculator {
 	width: 80px;
+
 }
 .float-sd {
 	display: block;
 	float: right;
 }
+
+.calculator-padding{
+	padding-left: 100px;
+}
+
+.input-calculator{
+	margin-top: 10px; 
+	padding: 0;
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (max-width: 572px) {
 	.responsive-image-icon {
@@ -251,9 +262,14 @@ body,
 	.sd {
 		text-align: justify;
 	}
+	.calculator-padding{
+		padding-left: 0;
+	}
+
 }
 
 @media (max-width: 360px) {
+	
 	.information {
 		text-align: center;
 	}
@@ -273,4 +289,8 @@ body,
 	.black-padding {
 		padding: 0;
 	}
+	.calculator-padding{
+		padding-left: 0;
+	}
+	
 }
