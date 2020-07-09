@@ -93,10 +93,11 @@
 					</p>
 					<div class="row">
 						<div class="col-12 col-sm-4 input-calculator" style="margin-right: 15px;">
-							<label for="rand">Amount in Rand</label>
+							<label for="rand">Enter amount in Rand</label>
 
 							<input
 								id="rand"
+								name="rand"
 								type="text"
 								class="form-control"
 								placeholder="R 0.00"
@@ -106,8 +107,9 @@
 						<div class="valid-tooltip">
 						  Looks good!
 						</div>
-						
+
 						<div class="col-12 col-sm-4 input-calculator">
+							<label>Select pay cycle</label>
 							<select name="" id="" class="form-control" required>
 								<option value="Per Day">Per Day</option>
 								<option value="Per Week">Per Week</option>
@@ -137,6 +139,8 @@
 					<div class="row">
 						<div class="col-8 col-sm-4 input-calculator">
 							<input
+								id="days"
+								name="days"
 								type="text"
 								name="Days"
 								class="form-control"
