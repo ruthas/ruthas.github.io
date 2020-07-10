@@ -1,3 +1,88 @@
+:root {
+	--clr-light: #fdffc4
+}
+.darkmode {
+	background-color: #000000e6 !important;
+	color: whitesmoke !important;
+}
+
+.darkmode p, .darkmode a{
+	color: white !important;
+}
+
+.darkmode p.powered-by { 
+	color: black !important;
+}
+
+.darkmode .vision {
+	color:#ffb400 !important;
+}
+
+
+.fabs {
+	position: fixed;
+	right: 32px;
+	bottom: 32px;
+	background-color: whitesmoke;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	box-shadow: 1px 3px 4px gray;
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.fabs:hover {
+	cursor: pointer;
+}
+.fabs img {
+	height: 45px;
+	width: 45px;
+	transform: rotate(360deg);
+	transition: 0.4s;
+}
+.box {
+	position: fixed;
+	bottom:  5px;
+	right: 75px;
+	height: 0;
+	transition-delay: 0.3s;
+	transition: 0.5s ease-in;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.item  {
+	overflow: hidden;
+	transition: 0.4s ease-in;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 1px 1px 3px grey;
+	transition-delay: 0.2s;
+	background: palevioletred;
+}
+
+.item:hover {
+	cursor: pointer;
+}
+
+.item img {
+	width: 70vh;
+}
+
+.box-active {
+	height: 290px;
+}
+.fabs-active img{
+	transform: rotate(270deg);
+	width: 40%;
+}
+
 html {
 	font-family: Helvetica Neue;
 }
@@ -219,19 +304,18 @@ body,
 
 .responsive-image-icon-calculator {
 	width: 80px;
-
 }
 .float-sd {
 	display: block;
 	float: right;
 }
 
-.calculator-padding{
+.calculator-padding {
 	padding-left: 100px;
 }
 
-.input-calculator{
-	margin-top: 10px; 
+.input-calculator {
+	margin-top: 10px;
 	padding-left: 0;
 }
 
@@ -262,14 +346,12 @@ body,
 	.sd {
 		text-align: justify;
 	}
-	.calculator-padding{
+	.calculator-padding {
 		padding-left: 0;
 	}
-
 }
 
 @media (max-width: 360px) {
-	
 	.information {
 		text-align: center;
 	}
@@ -289,8 +371,7 @@ body,
 	.black-padding {
 		padding: 0;
 	}
-	.calculator-padding{
+	.calculator-padding {
 		padding-left: 0;
 	}
-	
 }

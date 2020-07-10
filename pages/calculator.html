@@ -50,10 +50,14 @@
 						>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="calculator.html">Calculator</a>
+						<a class="nav-link" href="calculator.html"
+							>Calculator</a
+						>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="contact-us.html">Contact us</a>
+						<a class="nav-link" href="contact-us.html"
+							>Contact us</a
+						>
 					</li>
 				</ul>
 			</div>
@@ -67,103 +71,129 @@
 							How does it work?
 						</h1>
 						<h2 class="yellow">
-							Use your calculator below to see if Setana is right for you
+							Use your calculator below to see if Setana is right
+							for you
 						</h2>
 					</div>
 				</div>
 			</div>
-			
-			<div class="row margin-tp information width-body">
-				<h2>Calculate your benefits</h2>
-			</div>
+			<form action="" class="needs-validation">
+				<div class="form-group">
 
-
-			<div class="row margin-tp information calculator-padding">
-				<div class="col-12 col-sm-2">
-					<img
-						src="../assets/Group 2656.svg"
-						class="responsive-image-icon-calculator information" alt="The number one, representing step 1"
-					/>
+				<div class="row margin-tp information width-body">
+					<h2 class="yellow">Calculate your benefits</h2>
 				</div>
-				<div class="col-12 col-sm-10">
-					<h2 class="black">Your pay</h2>
-					<p class="paragraph-text black">
-						How much are you paid? If you’ve more than one job, select the job
-						whose pay you want topped up.
-					</p>
-					<div class="row">
-						<div class="col-12 col-sm-4 input-calculator" style="margin-right: 15px;">
-							<label for="rand">Enter amount in Rand</label>
 
-							<input
-								id="rand"
-								name="rand"
-								type="text"
-								class="form-control"
-								placeholder="R 0.00"
-								required
-							/>
-						</div>
-						<div class="valid-tooltip">
-						  Looks good!
-						</div>
+				<div class="row margin-tp information calculator-padding">
+					<div class="col-12 col-sm-2">
+						<img
+							src="../assets/Group 2656.svg"
+							class="responsive-image-icon-calculator information"
+							alt="The number one, representing step 1"
+						/>
+					</div>
+					<div class="col-12 col-sm-10">
+						<h2 class="black">Your pay</h2>
+						<p class="paragraph-text black">
+							How much are you paid? If you’ve more than one job,
+							select the job whose pay you want topped up.
+						</p>
+						<div class="row">
+							<div
+								class="col-12 col-sm-4 input-calculator form-group"
+								style="margin-right: 15px;"
+							>
+								<label for="rand">Enter amount in Rand</label>
 
-						<div class="col-12 col-sm-4 input-calculator">
-							<label for="pay">Select pay cycle</label>
-							<select name="pay" id="pay" class="form-control" required>
-								<option value="Per Day">Per Day</option>
-								<option value="Per Week">Per Week</option>
-								<option value="Per Month">Per Month</option>
-							</select>	
+								<input
+									id="rand"
+									name="rand"
+									type="text"
+									class="form-control"
+									placeholder="R 0.00"
+									required
+								/>
+								<div class="valid-feedback"></div>
+								<div class="invalid-feedback">Please enter a valid amount</div>
+
+							</div>
+							
+							<div
+								class="col-12 col-sm-4 input-calculator form-group"
+							>
+								<label for="pay">Select pay cycle</label>
+								<select
+									name="pay"
+									id="pay"
+									class="form-control"
+									required="required"
+								>
+									<option value="Per Day">Per Day</option>
+									<option value="Per Week">Per Week</option>
+									<option value="Per Month">Per Month</option>
+								</select>
+								<div class="valid-feedback"></div>
+								<div class="invalid-feedback">Please enter a valid amount</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			
+				<div class="row margin-tp calculator-padding">
+					<div class="col-12 col-sm-2 information">
+						<img
+							src="../assets/Group 2657.svg"
+							class="responsive-image-icon-calculator information"
+							alt="The number two, representing step 2"
+						/>
+					</div>
+					<div class="col-12 col-sm-10 information">
+						<h2 class="black">Your unpaid time off over a year</h2>
 
-			<div class="row margin-tp calculator-padding">
-				<div class="col-12 col-sm-2 information">
-					<img
-						src="../assets/Group 2657.svg"
-						class="responsive-image-icon-calculator information" alt="The number two, representing step 2"
-					/>
-				</div>
-				<div class="col-12 col-sm-10 information">
-					<h2 class="black">Your unpaid time off over a year</h2>
-
-					<p class="paragraph-text black">
-							How many unpaid days would you take due to sickness, bank
-							holidays, personal holidays, changes to the shift roster, etc?
-					</p>
-					<div class="row">
-						<div class="col-8 col-sm-4 input-calculator">
-							<label for="days">Enter number of days</label>
-							<input
-								id="days"
-								name="days"
-								type="text"
-								name="Days"
-								class="form-control"
-								placeholder="20"
-								required
-							/>
-						</div>
-						<div class="col-4 col-sm-4 margin-tp">
-							<label style="padding-top: 25px;" for="Days" class="">Days</label>
+						<p class="paragraph-text black">
+							How many unpaid days would you take due to sickness,
+							bank holidays, personal holidays, changes to the
+							shift roster, etc?
+						</p>
+						<div class="row">
+							<div
+								class="col-8 col-sm-4 input-calculator form-group"
+							>
+								<label for="days">Enter number of days</label>
+								<input
+									id="days"
+									name="days"
+									type="text"
+									name="Days"
+									class="form-control"
+									placeholder="20"
+									required
+								/>
+							</div>
+							<div class="col-4 col-sm-4 margin-tp">
+								<label
+									style="padding-top: 25px;"
+									for="Days"
+									class="form-group"
+									>Days</label
+								>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-		
-
-			<div class="row margin-tp information width-body">
-				<div class="col-12 offset-sm-8 col-sm-4">
-					<button type="submit" class="btn contact-form-btn btn-lg btn-block black">Calculate</button>
+				<div class="row margin-tp information width-body">
+					<div class="col-12 offset-sm-8 col-sm-4">
+						<button
+							type="submit"
+							class="btn contact-form-btn btn-lg btn-block black"
+						>
+							Calculate
+						</button>
+					</div>
 				</div>
 			</div>
-
+			</form>
 
 			<!-- Calculate Button 
 				<div class="row space float-right bd-highlight col-12 col-sm-3">
@@ -189,12 +219,26 @@
 			<footer>
 				<div class="row footer-yellow">
 					<div class="col-12 col-sm-5 social-icons information">
-						<img src="../assets/Icon simple-facebook.svg" class="social" alt="Facebook social icon" />
-						<img src="../assets/Icon awesome-linkedin.svg" class="social" alt="Linkedin social icon" />
-						<img src="../assets/Icon simple-instagram.svg" class="social" alt="Instagram social icon" />
+						<img
+							src="../assets/Icon simple-facebook.svg"
+							class="social"
+							alt="Facebook social icon"
+						/>
+						<img
+							src="../assets/Icon awesome-linkedin.svg"
+							class="social"
+							alt="Linkedin social icon"
+						/>
+						<img
+							src="../assets/Icon simple-instagram.svg"
+							class="social"
+							alt="Instagram social icon"
+						/>
 					</div>
 					<div class="col-12 col-sm-7 information">
-						<p class="powered-by black">Powered by Skywalk Innovations</p>
+						<p class="powered-by black">
+							Powered by Skywalk Innovations
+						</p>
 					</div>
 				</div>
 			</footer>
@@ -202,7 +246,6 @@
 
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
 		<script src="../script.js"></script>
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

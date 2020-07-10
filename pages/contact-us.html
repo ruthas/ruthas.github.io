@@ -7,7 +7,8 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
-		<!-- Bootstrap CSS -->
+		<!-- <script src="../script.js"></script>
+Bootstrap CSS -->
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -15,7 +16,7 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="../css/styles.css" />
-
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
 			body,
 			.container-fluid {
@@ -50,122 +51,112 @@
 						>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="calculator.html">Calculator</a>
+						<a class="nav-link" href="calculator.html"
+							>Calculator</a
+						>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="contact-us.html">Contact us</a>
+						<a class="nav-link" href="contact-us.html"
+							>Contact us</a
+						>
 					</li>
 				</ul>
 			</div>
 		</nav>
+
+		<div class="fabs">
+			<img src="../assets/facebook-m.svg" alt="">
+		</div>
+		<div  class="box">
+			<a href="#" class="item"><img src="../assets/messenger.png" alt="Messenger window"></a>
+		</div>
 
 		<div class="container-fluid">
 			<div class="container contact-header">
 				<h1>Contact Us</h1>
 			</div>
 			<div class="width-body">
-				<div>
-					<h1 class="yellow">Contact Us</h1>
-					<p class="paragraph-text">
-						CONTACT OUR FRIENDLY TEAM, WE WOULD BE GLAD TO HEAR FROM YOU
-					</p>
+				<form action="" class="needs-validation" novalidate>
+					<div class="form-group">
+						<h1 class="yellow">Contact Us</h1>
+						<p class="paragraph-text">
+							CONTACT OUR FRIENDLY TEAM, WE WOULD BE GLAD TO HEAR
+							FROM YOU
+						</p>
 
-					<div class="row form">
-						<div class="col-12 col-md-6 input-container">
-							<label class="paragraph-text" for="name">NAME</label>
-							<input
-								id="name"
-								name="name"
-								type="text"
-								class="form-control input-contact"
-								required
-							/>
-						</div>
-						<div class="col-6 col-md-4"></div>
-					</div>
-					<div class="row">
-						<div class="col-12 col-md-6">
-							<label class="paragraph-text" for="email">EMAIL ADDRESS</label>
-							<input
-								id="email"
-								name="email"
-								type="email"
-								class="form-control input-contact"
-								required
-							/>
-						</div>
-						<div class="col-12 col-md-6 input-container">
-							<label class="paragraph-text" for="contact">CONTACT NUMBER</label>
-							<input
-								id="contact"
-								name="contact"
-								type="text"
-								class="form-control input-contact"
-								required
-							/>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-12 input-container">
-							<label class="paragraph-text" for="message">MESSAGE</label>
-							<input
-								id="message"
-								name="message"
-								type="text"
-								class="form-control input-contact-msg input-contact"
-								required
-							/>
-							<div class="row space float-right bd-highlight col-12 col-sm-3">
-								<button
-									class="btn contact-form-btn btn-lg btn-block black"
-									type="submit"
+						<div class="row">
+							<div class="col-12 col-md-6 input-container">
+								<label class="paragraph-text" for="name"
+									>NAME</label
 								>
-									Submit
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="contact-bottom">
-				<div class="width-body">
-					<div class="container">
-						<h1 class="yellow">Sign Up</h1>
-
-						<div class="row">
-							<div class="col-12 col-md-6 input-container">
-								<label for="signup_name" class="paragraph-text white">NAME</label>
 								<input
+									id="name"
+									name="name"
 									type="text"
-									class="form-control input-contact white-border"
-									id="signup_name"
-									name="signup_name"
+									class="form-control input-contact"
 									required
 								/>
+								<div class="valid-feedback">Valid</div>
+								<div class="invalid-feedback">
+									Please fill in your name.
+								</div>
 							</div>
+							<div class="col-6 col-md-4"></div>
 						</div>
 						<div class="row">
-							<div class="col-12 col-md-6 input-container">
-								<label for="signup_email" class="paragraph-text white">EMAIL ADDRESS</label>
+							<div class="col-12 col-md-6">
+								<label class="paragraph-text" for="email"
+									>EMAIL ADDRESS</label
+								>
 								<input
-									type="text"
-									class="form-control input-contact white-border"
-									id="signup_email"
-									name="signup_email"
+									id="email"
+									name="email"
+									type="email"
+									class="form-control input-contact"
+									pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
 									required
 								/>
+								<div class="valid-feedback">Valid</div>
+								<div class="invalid-feedback">
+									Please enter a valid email address.
+								</div>
 							</div>
 							<div class="col-12 col-md-6 input-container">
-								<label for="signup_contact" class="paragraph-text white">CONTACT NUMBER</label>
+								<label class="paragraph-text" for="contact"
+									>CONTACT NUMBER</label
+								>
 								<input
+									id="contact"
+									name="contact"
 									type="text"
-									class="form-control input-contact white-border"
+									class="form-control input-contact"
 									required
-									id="signup_contact"
-									name="signup_contact"
 								/>
-								<div class="row space float-right bd-highlight col-12 col-sm-6">
+								<div class="valid-feedback">Valid</div>
+								<div class="invalid-feedback">
+									Please enter a contact number.
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12 input-container">
+								<label class="paragraph-text" for="message"
+									>MESSAGE</label
+								>
+								<input
+									id="message"
+									name="message"
+									type="text"
+									class="form-control input-contact-msg input-contact"
+									required
+								/>
+								<div class="valid-feedback">Valid</div>
+								<div class="invalid-feedback">
+									Please enter a message.
+								</div>
+								<div
+									class="row space float-right bd-highlight col-12 col-sm-3"
+								>
 									<button
 										class="btn contact-form-btn btn-lg btn-block black"
 										type="submit"
@@ -175,6 +166,102 @@
 								</div>
 							</div>
 						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="contact-bottom">
+				<div class="width-body">
+					<div class="container">
+						<form action="" class="needs-validation" novalidate>
+							<div class="form-group">
+							<h1 class="yellow">Sign Up</h1>
+
+							<div class="row text-center social-btn">
+								<div class="col-12 col-sm-4">
+									<a href="#" class="btn btn-primary btn-block"><i class="fa fa-facebook"></i> Sign up with <b>Facebook</b></a>
+								</div>
+								<div class="col-12 col-sm-4">
+									<a href="#" class="btn btn-info btn-block"><i class="fa fa-twitter"></i> Sign up with <b>Twitter</b></a>			</div>
+								<div class="col-12 col-sm-4">
+									<a href="#" class="btn btn-danger btn-block"><i class="fa fa-google"></i> Sign up with <b>Google</b></a>
+								</div>
+								
+															</div>
+							<div class="or-seperator"><i>or</i></div>
+
+							<div class="row">
+								<div class="col-12 col-md-6 input-container">
+									<label
+										for="signup_name"
+										class="paragraph-text white"
+										>NAME</label
+									>
+									<input
+										type="text"
+										class="form-control input-contact white-border"
+										id="signup_name"
+										name="signup_name"
+										required
+									/>
+									<div class="valid-feedback"></div>
+									<div class="invalid-feedback">
+										Please enter your name.
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-md-6 input-container">
+									<label
+										for="signup_email"
+										class="paragraph-text white"
+										>EMAIL ADDRESS</label
+									>
+									<input
+										type="email"
+										class="form-control input-contact white-border"
+										id="signup_email"
+										name="signup_email"
+										pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+										required
+									/>
+									<div class="valid-feedback"></div>
+									<div class="invalid-feedback">
+										Please enter a valid email address.
+									</div>
+								</div>
+								<div class="col-12 col-md-6 input-container">
+									<label
+										for="signup_contact"
+										class="paragraph-text white"
+										>CONTACT NUMBER</label
+									>
+									<input
+										type="text"
+										class="form-control input-contact white-border"
+										required
+										id="signup_contact"
+										name="signup_contact"
+									/>
+									<div class="valid-feedback"></div>
+									<div class="invalid-feedback">
+										Please enter your contact number.
+									</div>
+									<div
+										class="row space float-right bd-highlight col-12 col-sm-6"
+									>
+										<button
+											class="btn contact-form-btn btn-lg btn-block black"
+											type="submit"
+										>
+											Submit
+										</button>
+									</div>
+								</div>
+							</div>
+							</div>
+					</div>
+					</form>
 					</div>
 				</div>
 			</div>
@@ -196,21 +283,43 @@
 			<footer>
 				<div class="row footer-yellow">
 					<div class="col-12 col-sm-5 social-icons informationn">
-						<img src="../assets/Icon simple-facebook.svg" class="social" alt="Facebook social icon" />
-						<img src="../assets/Icon awesome-linkedin.svg" class="social" alt="Linkedin social icon" />
-						<img src="../assets/Icon simple-instagram.svg" class="social" alt="Instagram social icon" />
+						<img
+							src="../assets/Icon simple-facebook.svg"
+							class="social"
+							alt="Facebook social icon"
+						/>
+						<img
+							src="../assets/Icon awesome-linkedin.svg"
+							class="social"
+							alt="Linkedin social icon"
+						/>
+						<img
+							src="../assets/Icon simple-instagram.svg"
+							class="social"
+							alt="Instagram social icon"
+						/>
 					</div>
 					<div class="col-12 col-sm-7 information">
-						<p class="powered-by black">Powered by Skywalk Innovations</p>
+						<p class="powered-by black">
+							Powered by Skywalk Innovations
+						</p>
 					</div>
 				</div>
 			</footer>
 		</div>
 
-		<!-- Optional JavaScript -->
+		<script>
+			document.querySelector('.fabs').addEventListener('click', function(e){
+				document.querySelector('.box').classList.toggle('box-active');
+				document.querySelector('.fabs').classList.toggle('.fab-active');
+			});
+		</script>
+
+		<!--
+			<script src="../script.js"></script> 
+			Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
-		<script src="../script.js"></script>
+		
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
