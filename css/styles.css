@@ -1,12 +1,20 @@
 :root {
-	--clr-light: #fdffc4
+	--heading: white;
+	--subheading: #ffb400;
+	--paragraph: white;
+	--heading3: 
+
 }
 .darkmode {
 	background-color: #000000e6 !important;
 	color: whitesmoke !important;
 }
 
-.darkmode p, .darkmode a{
+.darkmode .vision p, .darkmode li > a {
+	color:#ffb400 !important;
+}
+
+.darkmode p, .darkmode a {
 	color: white !important;
 }
 
@@ -14,10 +22,26 @@
 	color: black !important;
 }
 
-.darkmode .vision {
-	color:#ffb400 !important;
+.dark-mode-toggle{
+	display:inline-block;
+	padding: 0.35em 1.2em;
+	border: 0.1em solid #FFFFFF;
+	margin:0 0.3em 0.3em 0;
+	border-radius:0.12em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-weight:300;
+	color:#FFFFFF;
+	text-align:center;
+	transition: all 0.2s;
+	background-color: transparent;
+	width: 50%;
 }
 
+.dark-mode-toggle:hover{
+	color:#000000;
+	background-color:#FFFFFF;
+}
 
 .fabs {
 	position: fixed;
@@ -45,7 +69,7 @@
 }
 .box {
 	position: fixed;
-	bottom:  5px;
+	bottom: 45px;
 	right: 75px;
 	height: 0;
 	transition-delay: 0.3s;
@@ -53,6 +77,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	
 }
 
 .item  {
@@ -73,6 +98,7 @@
 
 .item img {
 	width: 70vh;
+	background: white;
 }
 
 .box-active {
@@ -319,6 +345,28 @@ body,
 	padding-left: 0;
 }
 
+.or-seperator {
+	margin: 50px 0 15px;
+	text-align: center;
+	
+}
+.social-btn {
+	border-radius: 50px;
+}
+
+.twitter {
+	background-color: #00acee;
+	color: white;
+}
+.facebook {
+	background-color: #3b5998;
+	color: white;
+}
+.google {
+	background-color: white;
+	
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (max-width: 572px) {
 	.responsive-image-icon {
@@ -349,6 +397,23 @@ body,
 	.calculator-padding {
 		padding-left: 0;
 	}
+	.item img {
+		width: 70vh;
+	}
+	.fabs {
+		display: none;
+	}
+
+	.navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+	
 }
 
 @media (max-width: 360px) {
