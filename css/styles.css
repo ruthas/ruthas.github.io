@@ -35,7 +35,7 @@
 	text-align:center;
 	transition: all 0.2s;
 	background-color: transparent;
-	width: 50%;
+	width: 97%;
 }
 
 .dark-mode-toggle:hover{
@@ -412,7 +412,11 @@ body,
 
     .navbar .navbar-collapse {
         text-align: center;
-    }
+	}
+	
+	.dark-mode-toggle{
+		width: 97%;
+	}
 	
 }
 
