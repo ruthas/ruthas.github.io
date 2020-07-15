@@ -348,7 +348,8 @@ body,
 .or-seperator {
 	margin: 50px 0 15px;
 	text-align: center;
-	
+	font-weight: 900;
+	font-size: 13px;
 }
 .social-btn {
 	border-radius: 50px;
