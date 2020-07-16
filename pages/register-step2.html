@@ -22,7 +22,14 @@ Bootstrap CSS -->
 			.container-fluid {
 				padding: 0;
 				margin: 0;
-			}
+            }
+            h1{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 36px;
+                line-height: 40px;
+                letter-spacing: -0.015em;
+            }
 		</style>
 
 		<title>Setana</title>
@@ -59,6 +66,11 @@ Bootstrap CSS -->
 						<a class="nav-link" href="contact-us.html"
 							>Contact us</a
 						>
+                    </li>
+                    <li class="nav-item active">
+						<a class="nav-link" href="register-step1.html"
+							>Sign Up</a
+						>
 					</li>
 					<li>
 						<button
@@ -72,10 +84,18 @@ Bootstrap CSS -->
 			</div>
         </nav>
         
-        <div class="container-fluid">
+        <div class="container-fluid" style="min-height: 100%;">
 
-            <div class="col-12 margin-tp">
-                <h1>Get started</h1>
+            <div class="row">
+                <div class="col-12 margin-tp">
+                    <h1>Almost there</h1>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12 margin-tp justify-content-center">
+                    <img src="../assets/thumbnail.png" alt="placeholder for profile picture"/>
+                    <p>Upload your profile picture</p>
+                </div>
             </div>
             <form action="" class="needs-validation" novalidate>
                 <div class="form-group">
@@ -83,19 +103,20 @@ Bootstrap CSS -->
                         <div class="col-12 col-md-6">
                             <label
                                 for="id_number"
-                                class="margin-tp"
-                                >ID NUMBER  / PASSPORT NUMBER 
+                                class=""
+                                >FULL NAME 
                             </label>
                             <input
                                 type="text"
                                 class="form-control"
                                 id="signup_name"
                                 name="signup_name"
+                                pattern="[A-Za-z0-9-]{1,32}"
                                 required
                             />
                             <div class="valid-feedback"></div>
                             <div class="invalid-feedback">
-                                Please enter a  valid ID Number / Passport Number.
+                                Please enter your name.
                             </div>
                         </div>
                     </div>
@@ -104,65 +125,38 @@ Bootstrap CSS -->
                             <label
                                 for="email_address"
                                 class="margin-tp">
-                                EMAIL ADDRESS
+                                CONTACT NUMBER
                             </label>
                             <input
-                                type="email"
+                                type="tel"
                                 class="form-control"
                                 id="email_address"
                                 name="email_address"
-                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+                                pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
                                 required
                             />
                             <div class="valid-feedback"></div>
                             <div class="invalid-feedback">
-                                Please enter a valid email address.
+                                Please enter a valid contact number.
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <label
-                                for="password"
-                                class="margin-tp"
-                                >CREATE A PASSWORD</label
-                            >
-                            <input
-                                type="password"
-                                class="form-control"
-                                required
-                                id="password"
-                                name="password"
-                                minlength="8" 
-                                required
-                            />
-                            <p style="font-size: small;">Password must be at leaset 8 characters</p>
-                            <div class="valid-feedback"></div>
-                            <div class="invalid-feedback">
-                                Password length must be at leaset 8 characters.
-                            </div>
+                    </div> 
+                    <div class="row margin-tp">
+                        <div class="col-12">
+                            <p style="font-size: x-small;">T’s and C’s accepted  when you create account.</p>
                         </div>
-                    </div>
-                    <div class="row space float-right bd-highlight col-12 col-sm-6">
-                        <button
+                        <div class="col-12">
+                            <a><button
                             class="btn btn btn-dark btn-lg btn-block"
-                            type="submit" style="font-size: 15px; text-transform: uppercase; padding: 15px;">
-                            NEXT
-                        </button>
-                    </div>
-                    <div class="or-seperator" style="margin: 15px;"><i>OR</i></div>
-                    <div class="row">
-                        <div class="col-12 offset-sm-4 col-sm-4 space float-right bd-highlight col-12 col-sm-6">
-                            <button
-                                class="btn btn btn-dark btn-lg btn-block"
-                                type="submit"style="font-size: 15px; text-transform: uppercase;  padding: 15px;">
-                                sign up with uber
-                        </button>
+                            type="submit" style="background-color: black; font-size: 15px; text-transform: uppercase; padding: 15px;">
+                            create account
+                            </button></a>
                         </div>
                     </div>
+                    
                 </div>
             </form>
-           
+            
             <div class="row">
                 <ul class="col-12 list-unstyled text-small footer-styled">
                     <li>
@@ -176,6 +170,8 @@ Bootstrap CSS -->
                     </li>
                 </ul>
             </div>
+
+        
 
             <footer>
                 <div class="row footer-yellow">
