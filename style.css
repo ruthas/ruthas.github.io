@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+html {
+	font-size: 10px;
+}
+
+.container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* navbar */
+
+/* #nav-bar {
+	height: auto;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+}
+
+.nav-bar {
+	background-color: black;
+	left: 0;
+	top: 0;
+	padding: 1rem 5rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+} */
+
+.nav-bar .brand a {
+	font-family: 'Flash Back - Demo', sans-serif;
+	font-size: 2.45rem;
+	color: aliceblue;
+}
+
+/* hero */
+.hero {
+	min-height: 80vh;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	justify-content: center;
+	background-color: rgb(240, 248, 255);
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero .hero-text {
+	width: 100%;
+	text-align: center;
+}
+
+.hero .hero-text .hero-heading {
+	font-size: 5rem;
+	font-weight: 500;
+	color: #04151f;
+}
+
+.hero .hero-text .hero-subheading {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	color: #04151f;
+	letter-spacing: 0.6rem;
+}
+
+.hero .hero-text .hero-button {
+	margin-top: 30px;
+	padding: 2rem 5rem;
+	display: inline-block;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: aliceblue;
+	background-color: #183a37;
+	letter-spacing: 0.6rem;
+}
+
+.hero .hero-img {
+	height: auto;
+	width: 80%;
+	margin-top: 3rem;
+}
+
+.hero .hero-img img {
+	height: 100%;
+	width: 100%;
+}
+
+/* about */
+
+.about {
+	width: 100%;
+	min-height: 50vh;
+	padding: 10rem 5rem;
+	flex-direction: column;
+}
+
+.about .about-text {
+	text-align: center;
+}
+
+.about .about-text .about-heading {
+	font-size: 4rem;
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+	color: black;
+}
+
+.about .about-text .about-desc {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	margin-top: 15px;
+	margin-bottom: 40px;
+}
+
+.about .about-text .about-button {
+	font-size: 1.6rem;
+	letter-spacing: 0.2rem;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	padding: 1.6rem 2.6rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline=block;
+	background-color: #750d37;
+	color: aliceblue;
+}
+
+.about .about-img {
+	margin-top: 20px;
+}
+
+.about .about-img .about-img-wrapper {
+	margin-top: 60px;
+	height: auto;
+	max-width: 400px;
+	position: relative;
+	display: inline-block;
+}
+
+.about .about-img .about-img-wrapper img {
+	height: 100%;
+	width: 100%;
+}
+
+.about .about-img .about-img-wrapper::after {
+	position: absolute;
+	content: '';
+	right: -5rem;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 70%;
+	height: 120%;
+	background-color: rgba(168, 62, 65, 0.7);
+	z-index: -1;
+}
+
+/* skills */
+
+.skills,
+.portfolio {
+	flex-direction: column;
+	min-height: 60vh;
+	padding: 10rem 5rem;
+}
+
+.skills .skills-text,
+.portfolio .portfolio-text {
+	width: 100%;
+	text-align: center;
+}
+
+.skills .skills-text .skills-heading,
+.portfolio .portfolio-text .portfolio-heading {
+	font-size: 4rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.skills .skills-text .skills-desc,
+.portfolio .portfolio-text .portfolio-desc {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	margin-top: 20px;
+}
+
+.skills .skills-info,
+.portfolio .portfolio-info {
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	flex-direction: column;
+}
+
+.skills .skills-info .skill,
+.portfolio .portfolio-info .project {
+	width: 100%;
+	min-height: 300px;
+	position: relative;
+	transition: 0.3s ease transform;
+	margin: 5px;
+}
+
+.skills .skills-info .skill .skill-card,
+.portfolio .portfolio-info .project .project-card {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	transform-style: preserve-3d;
+	transition: 0.3s ease transform;
+	display: block;
+}
+
+.skills .skills-info .skill .skill-card .skill-front,
+.skills .skills-info .skill .skill-card .skill-back,
+.portfolio .portfolio-info .project .project-card .project-front,
+.portfolio .portfolio-info .project .project-card .project-back {
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	backface-visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(136, 89, 135, 0.13);
+	padding: 10px;
+}
+
+.skills .skills-info .skill .skill-card .skill-back,
+.portfolio .portfolio-info .project .project-card .project-back {
+	transform: rotateY(180deg);
+}
+
+.skills .skills-info .skill .skill-card .skill-front i {
+	font-size: 4rem;
+	margin-bottom: 10px;
+}
+
+.skills .skills-info .skill .skill-card .skill-front .skill-front-heading,
+.skills .skills-info .skill .skill-card .skill-back .skill-back-heading {
+	font-size: 2rem;
+	text-transform: capitalize;
+}
+
+.skills .skills-info .skill:hover .skill-card {
+	transform: rotateY(180deg);
+}
+
+.skills .skills-info .skill .skill-card .skill-back .skill-back-desc {
+	font-size: 1.3rem;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.skills .skills-info .skill:nth-child(1) .skill-card .skill-front {
+	background-color: #750d37;
+	color: aliceblue;
+}
+.skills .skills-info .skill:nth-child(2) .skill-card .skill-front {
+	background-color: #a63d40;
+	color: aliceblue;
+}
+.skills .skills-info .skill:nth-child(3) .skill-card .skill-front {
+	background-color: #183a37;
+	color: aliceblue;
+}
+
+/* Portfolio */
+
+.portfolio .portfolio-info .project .project-card .project-front i {
+	font-size: 5rem;
+	margin: 0.4rem;
+	display: flex;
+}
+
+.portfolio .portfolio-info .project .project-card .project-front a{
+	color: inherit;
+}
+
+.portfolio .portfolio-info .project:nth-child(1) .project-card .project-front {
+	background-color: #a8dadc;
+	color: inherit;
+}
+.portfolio .portfolio-info .project:nth-child(2) .project-card .project-front {
+	background-color: #f1faee;
+	color: inherit;
+}
+.portfolio .portfolio-info .project:nth-child(3) .project-card .project-front {
+	background-color: #77abbd;
+	color: inherit;
+}
+
+/* hire */
+.hire {
+	min-height: 10vh;
+	flex-direction: column;
+	width: 100%;
+	background-color: #7389ae;
+	padding: 3rem 2rem;
+}
+
+.hire .hire-heading {
+	font-size: 2.2rem;
+	text-align: center;
+}
+
+.hire .hire-button {
+	padding: 2rem 3rem;
+	display: inline-block;
+	background-color: rgb(129, 123, 123);
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.2rem;
+	margin-top: 10px;
+	color: aliceblue;
+	transition: 0.3s ease background-color;
+}
+
+.hire .hire-button:hover {
+	background-color: #183a37;
+}
+
+/*footer */
+
+.footer {
+	min-height: 20vh;
+	width: 100%;
+	background-color: black;
+	color: aliceblue;
+	text-align: center;
+	padding: 5rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer .footer-contact {
+	padding: 20px;
+}
+
+.footer .footer-contact .contact-heading {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+
+.footer .footer-contact .contact-info {
+	font-size: 1.4rem;
+	padding-top: 10px;
+	letter-spacing: 0.2rem;
+}
+
+.footer .social .social-icons a {
+	color: aliceblue;
+	font-size: 3rem;
+	margin: 0.4rem;
+	display: inline-block;
+}
+
+/* media queries for desktop tab */
+
+@media only screen and (min-width: 768px) {
+	.hero {
+		height: 100vh;
+		flex-direction: row-reverse;
+		padding-right: 10%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.hero .hero-text .hero-subheading {
+		font-size: 2.3rem;
+		letter-spacing: 0.5rem;
+	}
+
+	.hero .hero-img {
+		min-width: 400px;
+		max-width: 1000px;
+	}
+
+	/* about */
+
+	.about {
+		width: 90%;
+		margin: 0 auto;
+		flex-direction: row;
+	}
+
+	.about .about-text .about-desc {
+		font-size: 2.3rem;
+		line-height: 3rem;
+		margin-top: 15px;
+		margin-bottom: 35px;
+	}
+
+	.about .about-text {
+		width: 50%;
+		text-align: left;
+		padding-right: 17rem;
+	}
+
+	.skills .skills-heading .skills-desc,
+	.portfolio .portfolio-heading .portfolio-desc {
+		max-width: 500px;
+		padding-top: 20px;
+		margin: 0 auto;
+	}
+
+	.skills .skills-text .skills-desc, .portfolio .portfolio-text .portfolio-desc {
+		font-size: 2.3rem;
+		line-height: 3rem;
+		margin-top: 20px;
+	}
+
+	.skills .skills-info,
+	.portfolio .portfolio-info {
+		flex-direction: row;
+	}
+
+	.skills .skills-info .skill,
+	.portfolio .portfolio-info .project {
+		margin: 10;
+	}
+}
+
+/* MQs desktop */
+@media only screen and (min-width: 1200px) {
+	.hero .hero-text .hero-heading {
+		font-size: 6rem;
+	}
+	.hero .hero-text .hero-heading {
+		letter-spacing: 0.8rem;
+	}
+
+	.about .about-img .about-img-wrapper {
+		max-width: 600px;
+	}
+}
