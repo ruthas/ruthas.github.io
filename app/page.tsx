@@ -10,28 +10,28 @@ const PROJECTS = [
     n: "01",
     slug: "saas",
     accent: "#FF5A36",
-    title: "Project slot one",
+    title: "ROWHOUSE",
     desc: "Swap in a real case study — product, problem, outcome.",
   },
   {
     n: "02",
     slug: "fashion",
     accent: "#FF3D8A",
-    title: "Project slot two",
+    title: "RANGE",
     desc: "A place for your best interaction or UI work.",
   },
   {
     n: "03",
     slug: "food",
     accent: "#7B5CFA",
-    title: "Project slot three",
+    title: "Heat Club",
     desc: "Client work, side project, or open source — your call.",
   },
   {
     n: "04",
     slug: "wellness",
     accent: "#1FAE7A",
-    title: "Project slot four",
+    title: "Tend",
     desc: "Save the strongest one for last.",
   },
 ];
@@ -82,7 +82,7 @@ export default function Home() {
       <section className="ras-section" id="work">
         <div className="ras-section-head">
           <div className="ras-section-eyebrow">Selected work</div>
-          <h2 className="ras-section-title">Placeholder slots — swap in real projects</h2>
+          <h2 className="ras-section-title">Mock Projects</h2>
         </div>
         <div className="ras-projects">
           {PROJECTS.map((p) => (
